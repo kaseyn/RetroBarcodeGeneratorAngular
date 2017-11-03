@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <div *ngFor='let bar of barcode' [ngClass]="{'bar': true}" [ngStyle]="{'background-color': bar}">
+    </div>
+  </body>
+</html>
+
+
+
+<!--  <h1>Retro Barcode Generator</h1>
+<div *ngFor='let x of colors' [ngStyle]="{'height': '40px', 'width': '40px', 'display': 'inline-block', 'border': '1pt dashed black', 'background-color': colors[random()]}"></div> -->
