@@ -12,7 +12,7 @@ export class AppComponent {
 
   genBarcode() {
   	for (let i =0; i < 10; i++){
-  		this.barcode.push(this.colors[Math.floor(Math.random() * (this.colors.length - 1)]);
+  		this.barcode.push(this.colors[Math.floor(Math.random() * this.colors.length)]);
   	}
   	console.log(this.barcode);
   }
